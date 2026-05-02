@@ -1,0 +1,10 @@
+CC=gcc
+CFLAGS=-Wall -Wextra -std=c11
+
+all: server
+
+server: server_2980.c
+	$(CC) $(CFLAGS) server_2980.c -o server_2980
+
+clean:
+	rm -f server_2980
